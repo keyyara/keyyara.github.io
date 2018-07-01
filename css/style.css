@@ -1,0 +1,305 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+@font-face {
+  font-family: "Apercu_Light";
+  src: url("Apercu_Light.ttf");
+}
+@font-face {
+  font-family: "G-Pro";
+  src: url("GmuenderAntiquaPro.otf");
+}
+@font-face {
+  font-family: "G-Pro-Italic";
+  src: url("GmuenderAntiquaPro-Italic.otf");
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("ogg-roman-webfont.ttf");
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("ogg-roman-webfont.ttf");
+}
+@font-face {
+  font-family: "GT America M";
+  src: url("gt-america-standard-medium.ttf");
+}
+@font-face {
+  font-family: "GT America R";
+  src: url("gt-america-standard-regular.ttf");
+}
+h1 {
+  font-family: "GT America R";
+  font-weight: 800;
+  line-height: 14px;
+  font-size: 18px;
+  letter-spacing: 40px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "GT America R";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0px;
+  letter-spacing: -.2px;
+  text-transform: none;
+}
+h3{
+  font-family: "GT America R";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  margin: 0px;
+  text-transform: none;
+}
+h4 {
+  font-family: "GT America R";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -.2px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: "GT America R";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -.2px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+h6 {
+  font-family: "GT America R";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0px;
+}
+p {
+  font-family: "GT America R";
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 19px;
+  letter-spacing: -.25px;
+  margin: 0px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+  margin: 15px;
+  /*background: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1));*/
+}
+a {
+  color: black;
+}
+a:link{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+color: transparent;
+-webkit-text-stroke-color: black;
+-webkit-text-stroke-width: 1.25px;
+}
+img {
+  margin-bottom: 0px;
+}
+dt {
+  color: transparent;
+}
+dt::first-letter {
+  color: white;
+  -webkit-text-stroke-color: #000FFF;
+  -webkit-text-stroke-width: 1.75px;
+}
+/******************************************
+/* HEADER
+/*******************************************/
+header {
+  width: 100%;
+  float: left;
+  position: fixed;
+  padding-right: 0%;
+  z-index: 200;
+  margin-bottom: 22px;
+  margin-top: 25px;
+}
+.info {
+  position: absolute;
+  transform: rotate(24deg);
+  margin-left: -10px;
+}
+.middle {
+  margin-left: 20%;
+}
+.last {
+  margin-left: 30%;
+}
+.pachanga {
+  margin-left: 50%;
+}
+
+/******************************************
+/* PROJECTS
+/*******************************************/
+.intro-image {
+  height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 40px;
+}
+.breakdown {
+  margin-left: -35px;
+  display: none;
+}
+.projects {
+  float: left;
+  width: 70%;
+  padding-right: 2%;
+  margin-top: 5px;
+}
+.cycle-slideshow {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.cycle-slideshow img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+img.cycle-next {
+  cursor: not-allowed;
+}
+/* CAROUSEL */
+figcaption {
+  padding-left: 0px;
+  padding-right: 20px;
+}
+.cycle-prev {
+  left: 0;
+  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;
+}
+.cycle-next {
+  right: 0;
+  background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+}
+.cycle-prev, .cycle-next {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 800;
+  height: 100%;
+  cursor: url('https://ibb.co/cc26XS' 2 2, default);
+}
+.cycle-caption {
+  text-align: right;
+  margin-top: 0px;
+  float: right;
+  clear: both;
+  font-family: "Presicav";
+  font-size: 13px;
+}
+/******************************************
+/* ASIDE
+/*******************************************/
+aside {
+  width: 30%;
+  float: right;
+  padding-left: 1%;
+}
+.bio {
+  margin-bottom: 45px;
+  padding-right: 2%;
+}
+.name {
+  margin-top: -5px;
+}
+.news {
+  margin-bottom: 40px;
+}
+.placeholder {
+  height: 300px;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 745px){
+/******************************************
+/* PROJECTS
+/*******************************************/
+  .projects {
+    float: left;
+    background-color: pink;
+    width: 100%;
+  }
+  .cycle-slideshow {
+    width: 100%;
+  }
+  .cycle-slideshow img {
+    width: 100%; height: auto;
+  }
+
+/******************************************
+/* ASIDE
+/*******************************************/
+aside {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 2%;
+}
