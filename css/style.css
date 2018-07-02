@@ -68,7 +68,7 @@ h1 {
 h2 {
   font-family: "GT America R";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 36px;
   margin: 0px;
   letter-spacing: -.2px;
@@ -77,7 +77,7 @@ h2 {
 h3{
   font-family: "GT America R";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.75px;
   letter-spacing: 0.2px;
   margin: 0px;
   text-transform: none;
@@ -175,20 +175,8 @@ header {
 /******************************************
 /* PROJECTS
 /*******************************************/
-#bloc {
-  padding-bottom: 65px;
-}
-#diesel {
-  padding-bottom: 65px;
-}
-#ico {
-  padding-bottom: 65px;
-}
-#noat {
-  padding-bottom: 65px;
-}
-#mit {
-  padding-bottom: 65px;
+#bloc #diesel #ico #noat #mit{
+  padding-bottom: 45px;
 }
 .intro-image {
   height: 500px;
@@ -222,8 +210,8 @@ img.cycle-next {
 /* CAROUSEL */
 figcaption {
   padding-left: 0px;
-  padding-right: 20%;
-  padding-top: 20px;
+  padding-right: 10%;
+  padding-top: 10px;
 }
 .cycle-prev {
   left: 0;
@@ -245,11 +233,11 @@ figcaption {
 }
 .cycle-caption {
   text-align: right;
-  margin-top: 15px;
+  margin-top: 6px;
   float: right;
   clear: both;
   font-family: "Presicav";
-  font-size: 13px;
+  font-size: 11px;
 }
 /******************************************
 /* ASIDE
@@ -274,6 +262,7 @@ aside {
   width: 100%;
   border: 1px solid black;
   margin-top: 10px;
+  display: none;
 }
 
 @media only screen and (max-width: 900px){
@@ -292,20 +281,8 @@ h2 {
 /******************************************
 /* PROJECTS
 /*******************************************/
-#bloc {
-  padding-bottom: 20px;
-}
-#diesel {
-  padding-bottom: 20px;
-}
-#ico {
-  padding-bottom: 20px;
-}
-#noat {
-  padding-bottom: 20px;
-}
-#mit {
-  padding-bottom: 20px;
+#bloc #diesel #ico #noat #mit{
+  padding-bottom: 8px;
 }
   .projects {
     float: left;
@@ -317,7 +294,11 @@ h2 {
   .cycle-slideshow img {
     width: 100%; height: auto;
   }
-
+  figcaption {
+    padding-left: 0px;
+    padding-right: 10%;
+    padding-top: 5px;
+  }
 /******************************************
 /* ASIDE
 /*******************************************/
