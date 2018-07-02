@@ -49,26 +49,6 @@ Developer @GA in NYC
 /* TYPOGRAPHY
 /*******************************************/
 @font-face {
-  font-family: "Apercu_Light";
-  src: url("Apercu_Light.ttf");
-}
-@font-face {
-  font-family: "G-Pro";
-  src: url("GmuenderAntiquaPro.otf");
-}
-@font-face {
-  font-family: "G-Pro-Italic";
-  src: url("GmuenderAntiquaPro-Italic.otf");
-}
-@font-face {
-  font-family: "Ogg";
-  src: url("ogg-roman-webfont.ttf");
-}
-@font-face {
-  font-family: "Ogg";
-  src: url("ogg-roman-webfont.ttf");
-}
-@font-face {
   font-family: "GT America M";
   src: url("gt-america-standard-medium.ttf");
 }
@@ -223,6 +203,37 @@ header {
 img.cycle-next {
   cursor: not-allowed;
 }
+/* CAROUSEL */
+figcaption {
+  padding-left: 0px;
+  padding-right: 20px;
+}
+.cycle-prev {
+  left: 0;
+  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;
+}
+.cycle-next {
+  right: 0;
+  background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+}
+.cycle-prev, .cycle-next {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 800;
+  height: 100%;
+  cursor: url('https://ibb.co/cc26XS' 2 2, default);
+}
+.cycle-caption {
+  text-align: right;
+  margin-top: 0px;
+  float: right;
+  clear: both;
+  font-family: "Presicav";
+  font-size: 13px;
+}
 /******************************************
 /* ASIDE
 /*******************************************/
@@ -257,6 +268,13 @@ aside {
     background-color: pink;
     width: 100%;
   }
+  .cycle-slideshow {
+    width: 100%;
+  }
+  .cycle-slideshow img {
+    width: 100%; height: auto;
+  }
+
 /******************************************
 /* ASIDE
 /*******************************************/
