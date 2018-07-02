@@ -270,10 +270,31 @@ aside {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 900px){
 /******************************************
 /* PROJECTS
 /*******************************************/
+h2 {
+  font-family: "GT America R";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0px;
+  letter-spacing: -.3px;
+  text-transform: none;
+}
+/******************************************
+/* PROJECTS
+/*******************************************/
+#diesel {
+  padding-bottom: 20px;
+}
+#noat {
+  padding-bottom: 20px;
+}
+#mit {
+  padding-bottom: 20px;
+}
   .projects {
     float: left;
     width: 100%;
@@ -292,4 +313,7 @@ aside {
   width: 100%;
   margin-top: 10px;
   margin-left: 2%;
+}
+.news {
+  display: none;
 }
