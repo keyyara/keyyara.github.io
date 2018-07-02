@@ -175,6 +175,15 @@ header {
 /******************************************
 /* PROJECTS
 /*******************************************/
+#diesel {
+  padding-bottom: 80px;
+}
+#noat {
+  padding-bottom: 80px;
+}
+#mit {
+  padding-bottom: 80px;
+}
 .intro-image {
   height: 500px;
   width: 100%;
@@ -207,7 +216,8 @@ img.cycle-next {
 /* CAROUSEL */
 figcaption {
   padding-left: 0px;
-  padding-right: 20px;
+  padding-right: 20%;
+  padding-top: 20px;
 }
 .cycle-prev {
   left: 0;
@@ -229,7 +239,7 @@ figcaption {
 }
 .cycle-caption {
   text-align: right;
-  margin-top: 0px;
+  margin-top: 15px;
   float: right;
   clear: both;
   font-family: "Presicav";
@@ -266,7 +276,6 @@ aside {
 /*******************************************/
   .projects {
     float: left;
-    background-color: pink;
     width: 100%;
   }
   .cycle-slideshow {
