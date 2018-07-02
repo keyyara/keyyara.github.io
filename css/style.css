@@ -175,14 +175,20 @@ header {
 /******************************************
 /* PROJECTS
 /*******************************************/
+#bloc {
+  padding-bottom: 65px;
+}
 #diesel {
-  padding-bottom: 80px;
+  padding-bottom: 65px;
+}
+#ico {
+  padding-bottom: 65px;
 }
 #noat {
-  padding-bottom: 80px;
+  padding-bottom: 65px;
 }
 #mit {
-  padding-bottom: 80px;
+  padding-bottom: 65px;
 }
 .intro-image {
   height: 500px;
@@ -286,7 +292,13 @@ h2 {
 /******************************************
 /* PROJECTS
 /*******************************************/
+#bloc {
+  padding-bottom: 20px;
+}
 #diesel {
+  padding-bottom: 20px;
+}
+#ico {
   padding-bottom: 20px;
 }
 #noat {
