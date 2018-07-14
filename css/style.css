@@ -167,7 +167,6 @@ dt:hover {
 .pImage {
     position: absolute;
     width: 100%;
-    border: 4px solid black;
 }
 #project-numbers {
   width: 100%;
