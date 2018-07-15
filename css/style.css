@@ -436,11 +436,11 @@ body {
   }
   .cycle-prev {
     left: 0;
-    background: url(http://pixsector.com/cache/852dce6a/avb91899cb3246210ca63.png) 50% 50% no-repeat;
+    background: url(https://pixsector.com/cache/852dce6a/avb91899cb3246210ca63.png) 50% 50% no-repeat;
   }
   .cycle-next {
     right: 0;
-    background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+    background: url(https://malsup.github.com/images/right.png) 50% 50% no-repeat;
   }
   .cycle-prev, .cycle-next {
     position: absolute;
