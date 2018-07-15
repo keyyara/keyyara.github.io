@@ -205,8 +205,8 @@ video:-webkit-full-page-media {
 .ICO-HP {
   width: 100%;
   margin-top: 0px;
-  padding-left: 28%;
-  padding-right: 28%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 .Atom-HP {
   width: 100%;
@@ -216,32 +216,39 @@ video:-webkit-full-page-media {
 }
 .BLOC-HP {
   width: 100%;
-  margin-top: 50px;
-  padding-left: 22%;
-  padding-right: 22%;
+  margin-top: -70px;
+  padding-left: 28%;
+  padding-right: 28%;
+  transform: rotate(28deg);
 }
 .BS-HP {
   width: 100%;
-  margin-top: -100px;
-  padding-left: 8%;
-  padding-right: 8%;
+  margin-top: 0px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .D-HP {
   width: 100%;
-  padding-left: 15%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .MM-HP {
-  width: 100%;
+  width: 110%;
   margin-top: -50px;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 12.5%;
+  padding-right: 5%;
+}
+.Forge-HP {
+  width: 100%;
+  margin-top: 0px;
+  padding-left: 25%;
+  padding-right: 20%;
 }
 .Noat-HP {
   width: 100%;
-  margin-top: 0px;
-  padding-left:12%;
-  padding-right: 12%;
+  margin-top: 40px;
+  padding-left:25%;
+  padding-right: 25%;
 }
 #project-numbers {
   width: 100%;
@@ -259,6 +266,7 @@ video:-webkit-full-page-media {
   float: left;
   width: 100%;
   margin-top: 0px;
+  margin-bottom: 25px;
   display: none;
 }
 .phone-gallery {
@@ -318,58 +326,214 @@ video:-webkit-full-page-media {
   padding-top: 25px;
 }
 
-@media (min-width: 1098px) and (max-width: 1320px) {
-/******************************************
-/* TYPE
-/*******************************************/
-/******************************************
-/* Interior Project Pages
-/*******************************************/
-.parallax-window {
-    min-height: 700px;
-    background: transparent;
-}
-}
-
-@media only screen and (max-width: 1098px) {
-/******************************************
-/* TYPE
-/*******************************************/
-h1 {
-  font-family: "America_R";
-  font-weight: 300;
-  font-size: 80px;
-  margin: 0px;
-}
-h3{
-  font-family: "America_R";
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 52px;
-  letter-spacing: 1px;
-  margin: 0px;
-  text-transform: uppercase;
-}
-/******************************************
-/* Interior Project Pages
-/*******************************************/
-  .project-gallery {
-    float: left;
-    width:100%;
-    background: transparent;
-    display: block;
-  }
+@media (min-width: 500px) and (max-width: 1098px) {
   /******************************************
-  /* HOME PAGE
+  /* TYPOGRAPHY
   /*******************************************/
-  #Hey {
+  h1 {
+    font-family: "America_R";
+    font-weight: 300;
+    font-size: 120px;
+    margin: 0px;
+  }
+  h2 {
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0px;
+    letter-spacing: -.3px;
+    text-transform: none;
+  }
+  h3{
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 12.75px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    margin: 0px;
+    text-transform: none;
+  }
+  h4 {
+    font-family: "America_R";
+    font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -.2px;
+  margin: 0px;
+    margin: 0px;
+    text-transform: none;
+  }
+  h5 {
+  }
+  h6 {
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0px;
+  }
+  p {
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 12.5px;
+    line-height: 19px;
+    letter-spacing: -.25px;
+    margin: 0px;
+  }
+/******************************************
+/* PROJECTS
+/*******************************************/
+body {
+  margin: 25px;
+}
+#project-desktop {
     display: none;
   }
-#project-desktop {
-  display:none;
+#phone-HP {
+  float: left;
+  width: 100%;
+  margin-top: 0px;
+  display: block;
 }
 #bloc #diesel #ico #noat #mit{
   padding-bottom: 45px;
+}
+  .intro-image {
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    display: none;
+  }
+  .breakdown {
+    margin-left: -35px;
+    display: none;
+  }
+  .projecto-phone {
+    float: left;
+    width: 70%;
+    padding-right: 2%;
+    margin-top: -5px;
+  }
+  .cycle-slideshow {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .cycle-slideshow img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  img.cycle-next {
+    cursor: not-allowed;
+  }
+  /* CAROUSEL */
+  figcaption {
+    padding-left: 0px;
+    padding-right: 10%;
+    padding-top:6px;
+  }
+  .cycle-prev {
+    left: 0;
+    background: url(http://pixsector.com/cache/852dce6a/avb91899cb3246210ca63.png) 50% 50% no-repeat;
+  }
+  .cycle-next {
+    right: 0;
+    background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+  }
+  .cycle-prev, .cycle-next {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 800;
+    height: 100%;
+    cursor: url('https://ibb.co/cc26XS' 2 2, default);
+  }
+  .cycle-caption {
+    text-align: right;
+    margin-top: 6px;
+    float: right;
+    clear: both;
+    font-family: "Presicav";
+    font-size: 11px;
+  }
+/******************************************
+/* ASIDE
+/*******************************************/
+aside {
+  width: 30%;
+  float: right;
+  padding-left: 1%;
+}
+}
+
+@media only screen and (max-width: 499px){
+/******************************************
+/* PROJECTS
+/*******************************************/
+body {
+  margin: 25px;
+}
+  h1 {
+    font-family: "America_R";
+    font-weight: 300;
+    font-size: 120px;
+    margin: 0px;
+  }
+  h2 {
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0px;
+    letter-spacing: -.3px;
+    text-transform: none;
+  }
+  h3{
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 12.75px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    margin: 0px;
+    text-transform: none;
+  }
+  h4 {
+    font-family: "America_R";
+    font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -.2px;
+  margin: 0px;
+    margin: 0px;
+    text-transform: none;
+  }
+  h5 {
+
+  }
+  h6 {
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0px;
+  }
+  p {
+    font-family: "America_R";
+    font-weight: 400;
+    font-size: 12.5px;
+    line-height: 19px;
+    letter-spacing: -.25px;
+    margin: 0px;
+  }
+/******************************************
+/* PROJECTS
+/*******************************************/
+#project-desktop {
+  display:none;
 }
 #phone-HP {
   float: left;
@@ -377,97 +541,42 @@ h3{
   margin-top: 0px;
   display: block;
 }
-.project-phone {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-/* CAROUSEL */
-.cycle-slideshow {
-  width: 100%;
-  margin-bottom: 40px;
-}
-.cycle-slideshow img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 8px;
-}
-img.cycle-next {
-  cursor: not-allowed;
-}
-figcaption {
-  padding-left: 0px;
-  padding-right: 10%;
-  padding-top: 10px;
-}
-.cycle-prev {
-  left: 0;
-  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;
-}
-.cycle-next {
-  right: 0;
-  background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
-}
-.cycle-prev, .cycle-next {
-  position: absolute;
-  top: 0;
-  width: 30%;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  z-index: 800;
-  height: 100%;
-  cursor: url('https://ibb.co/cc26XS' 2 2, default);
-}
-.cycle-caption {
-  text-align: right;
-  margin-top: 6px;
-  float: right;
-  clear: both;
-  font-family: "Presicav";
-  font-size: 11px;
-}
-.project-text {
-  float: left;
-  width:100%;
-  padding-right: 10%;
-  padding-left: 25px;
+#bloc, #diesel, #ico, #noat, #mit{
   padding-bottom: 25px;
 }
-}
-
-@media only screen and (max-width: 500px) {
+  .projects {
+    float: left;
+    width: 100%;
+  }
+  .cycle-slideshow {
+    width: 100%;
+  }
+  .cycle-slideshow img {
+    width: 100%; height: auto;
+  }
+  figcaption {
+    padding-left: 0px;
+    padding-right: 10%;
+    padding-top: 5px;
+  }
+  .cycle-caption {
+    text-align: center;
+    margin-top: 6px;
+    float: right;
+    clear: both;
+    font-family: "Presicav";
+    font-size: 11px;
+  }
 /******************************************
-/* TYPE
+/* ASIDE
 /*******************************************/
-h1 {
-  font-family: "America_R";
-  font-weight: 300;
-  font-size: 60px;
-  margin: 0px;
+aside {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  margin-left: 0%;
 }
-h3{
-  font-family: "America_R";
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 1px;
-  margin: 0px;
-  text-transform: uppercase;
-}
-.go-back {
-  position: absolute;
-  z-index: 200;
-  top: 25px;
-}
-.go-back-text {
-  position: fixed;
-  right: 25px;
-}
-.project-text {
-  float: left;
-  width:100%;
-  padding-right: 10%;
-  padding-left: 25px;
-  padding-bottom: 25px;
+.news {
+  display: none;
 }
 }
