@@ -57,7 +57,7 @@ h1 {
 h2 {
   font-family: "America_R";
   font-weight: 100;
-  font-size: 70px;
+  font-size: 90px;
   margin: 0px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -65,20 +65,20 @@ h2 {
 h3{
   font-family: "America_R";
   font-weight: 400;
-  font-size: 25px;
-  line-height: 45px;
-  letter-spacing: 28px;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 1px;
   margin: 0px;
   text-transform: uppercase;
 }
 h4 {
   font-family: "America_R";
   font-weight: 400;
-  font-size: 22px;
-  line-height: 29px;
+  font-size: 28px;
+  line-height: 32px;
   letter-spacing: 0.5px;
   margin: 0px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 h5 {
 
@@ -102,7 +102,7 @@ p {
 /* Base
 /*******************************************/
 body {
-  margin: 15px;
+  margin: 0;
 }
 a {
   color: black;
@@ -142,6 +142,39 @@ dt:hover {
 /******************************************
 /* HOME PAGE
 /*******************************************/
+Iframe {
+width: 100%;
+height:auto;
+}
+video:-webkit-full-page-media {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.videos {
+  margin-bottom: 15px;
+}
 #Hey {
   width: 100%;
   text-align: center;
@@ -162,11 +195,53 @@ dt:hover {
   position: absolute;
   z-index: -2;
   width: 100%;
-  height: auto;
+  top: 20%;
 }
 .pImage {
-    position: absolute;
-    width: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+}
+.ICO-HP {
+  width: 100%;
+  margin-top: 0px;
+  padding-left: 28%;
+  padding-right: 28%;
+}
+.Atom-HP {
+  width: 100%;
+  margin-top: 0px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.BLOC-HP {
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 22%;
+  padding-right: 22%;
+}
+.BS-HP {
+  width: 100%;
+  margin-top: -100px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.D-HP {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 10%;
+}
+.MM-HP {
+  width: 110%;
+  margin-top: -50px;
+  padding-left: 12.5%;
+  padding-right: 5%;
+}
+.Noat-HP {
+  width: 100%;
+  margin-top: 0px;
+  padding-left:12%;
+  padding-right: 12%;
 }
 #project-numbers {
   width: 100%;
@@ -197,33 +272,50 @@ dt:hover {
 .go-back {
   position: absolute;
   z-index: 200;
-  top: 40%;
+  top: 48%;
 }
 .go-back-text {
   position: fixed;
-  right: 0;
+  right: 25px;
 }
 .project-text {
   float: left;
-  height: 100%;
   width:100%;
+  padding-right: 5%;
+  padding-left: 25px;
+  padding-bottom: 25px;
 }
 .project-gallery {
   margin-top: 50px;
   float: left;
   width:100%;
+  height: auto;
+  padding-left: 8%;
+  padding-right: 8%;
   background: transparent;
 }
+.project-gi {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 .parallax-window {
-    min-height: 1340px;
+    min-height: 1000px;
     width: 100%;
     background: transparent;
 }
-.ICO-HP {
-  width: 100%;
-  padding-top: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
+.client {
+  float: left;
+  clear: both;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.info {
+  float: left;
+  clear: both;
+  padding-left: 25px;
+  padding-top: 25px;
 }
 
 @media (min-width: 1098px) and (max-width: 1320px) {
@@ -249,19 +341,23 @@ h1 {
   font-size: 80px;
   margin: 0px;
 }
+h3{
+  font-family: "America_R";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 1px;
+  margin: 0px;
+  text-transform: uppercase;
+}
 /******************************************
 /* Interior Project Pages
 /*******************************************/
-  .phone-gallery {
-    float: left;
-    width: 100%;
-    display: block;
-  }
   .project-gallery {
     float: left;
     width:100%;
     background: transparent;
-    display: none;
+    display: block;
   }
   /******************************************
   /* HOME PAGE
@@ -330,6 +426,13 @@ figcaption {
   font-family: "Presicav";
   font-size: 11px;
 }
+.project-text {
+  float: left;
+  width:100%;
+  padding-right: 10%;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
 }
 
 @media only screen and (max-width: 500px) {
@@ -341,4 +444,30 @@ h1 {
   font-weight: 300;
   font-size: 60px;
   margin: 0px;
+}
+h3{
+  font-family: "America_R";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.go-back {
+  position: absolute;
+  z-index: 200;
+  top: 25px;
+}
+.go-back-text {
+  position: fixed;
+  right: 25px;
+}
+.project-text {
+  float: left;
+  width:100%;
+  padding-right: 10%;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
 }
