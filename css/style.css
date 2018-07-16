@@ -315,13 +315,14 @@ video:-webkit-full-page-media {
 }
 .client {
   float: left;
+  width: 50%;
   clear: both;
   padding-left: 25px;
   padding-top: 25px;
 }
 .info {
-  float: left;
-  clear: both;
+  width: 50%;
+  float: right;
   padding-left: 25px;
   padding-top: 25px;
 }
