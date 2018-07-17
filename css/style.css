@@ -287,6 +287,7 @@ video:-webkit-full-page-media {
   right: 25px;
 }
 .project-text {
+  position: fixed;
   float: left;
   width:100%;
   padding-right: 5%;
@@ -294,13 +295,19 @@ video:-webkit-full-page-media {
   padding-bottom: 25px;
 }
 .project-gallery {
-  margin-top: 50px;
+  margin-top: 400px;
   float: left;
   width:100%;
   height: auto;
   padding-left: 8%;
   padding-right: 8%;
   background: transparent;
+}
+.first {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .project-gi {
   width: 100%;
