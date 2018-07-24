@@ -19,6 +19,19 @@ Developer @GA in NYC
 /******************************************
 /* BASE STYLES
 /*******************************************/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
 .clearfix:after {
      content: ".";
      display: block;
@@ -75,7 +88,7 @@ h4 {
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0px;
   margin: 0px;
   text-transform: none;
 }
@@ -303,6 +316,9 @@ video:-webkit-full-page-media {
   position: fixed;
   right: 25px;
 }
+.primo {
+  margin-top: 150px;
+}
 .project-text {
   position: fixed;
   float: left;
@@ -311,13 +327,53 @@ video:-webkit-full-page-media {
   padding-left: 25px;
   padding-bottom: 25px;
 }
-.project-gallery {
-  margin-top: 400px;
+.client {
+  float: left;
+  width: 15%;
+  clear: both;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.client_name {
+  float: left;
+  width: 35%;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.info {
+  width: 15%;
+  float: left;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.info_project {
+  width: 35%;
+  float: right;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.gallery_text {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 80px;
+}
+.gallery_small {
   float: left;
   width:100%;
   height: auto;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 17%;
+  padding-right: 17%;
+  background: transparent;
+}
+.gallery_large {
+  float: left;
+  width:100%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
   background: transparent;
 }
 .first {
@@ -329,31 +385,181 @@ video:-webkit-full-page-media {
 .project-gi {
   width: 100%;
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   margin-top: 5px;
 }
-.parallax-window {
-    min-height: 1000px;
-    width: 100%;
-    background: transparent;
-}
-.client {
-  float: left;
-  width: 50%;
-  clear: both;
-  padding-left: 25px;
-  padding-top: 25px;
-}
-.info {
-  width: 50%;
-  float: right;
-  padding-left: 25px;
-  padding-top: 25px;
-}
+
 footer {
   float: left;
   clear: both;
   height: 100px;
+}
+/******************************************
+/* BLOC
+/*******************************************/
+.green {
+  background-color: #8DC6E8;
+}
+.image-left {
+  float: left;
+  width: 100%;
+}
+.image-right {
+  float: right;
+  width: 100%;
+}
+/* carousel horizontal*/
+.carousel_container{
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+.carousel_blocks {
+  display: block;
+  background: transparent;
+  overflow-x: scroll;
+  margin-bottom: 100px;
+  white-space: nowrap;
+}
+.carousel_blocks--bloc {
+  display: block;
+  background: transparent;
+  overflow-x: scroll;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+.item {
+    display: inline-block;
+    width: 40%;
+    margin-top: 80px;
+    height: 300px;
+    position:relative;
+  }
+.gallery_text--bloc {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+#croissant {
+  width: 26%;
+  margin-left: 0%;
+  margin-top: -50px;
+  margin-bottom: -150px;
+  transform: rotate(-40deg);
+}
+#tea {
+  width: 26%;
+  margin-left: 60%;
+  margin-top: -20px;
+  margin-bottom: -100px;
+  transform: rotate(20deg);
+}
+#beans {
+  width: 33%;
+  margin-left: 5%;
+  margin-top: -100px;
+  margin-bottom: -220px;
+}
+#soup {
+  width: 33%;
+  margin-left: 0%;
+  margin-top: -100px;
+}
+#sandwich {
+  width: 40%;
+  margin-left: 58%;
+  margin-top: -170px;
+  margin-bottom: -40px;
+}
+#tangram {
+  width: 60%;
+}
+/******************************************
+/* Atom
+/*******************************************/
+.carousel_blocks--atom {
+  display: block;
+  background: white;
+  overflow-x: scroll;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  margin-top: 80px;
+}
+.item_Atom {
+    display: inline-block;
+    width: 40%;
+    margin-top: 80px;
+    position:relative;
+    margin-right: -240px;
+}
+#iphone {
+  width: 34%;
+  margin-left: 100px;
+}
+#countdown {
+  width: 80%;
+  margin-left: 30%;
+  margin-top: -240px;
+}
+/******************************************
+/* ICO
+/*******************************************/
+.carousel_blocks--ICO {
+  display: block;
+  background: white;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+#creek {
+  width: 100%;
+  margin-left: 50px;
+}
+.project_full {
+  width: 100%;
+  float: left;
+}
+.primo_ICO {
+  margin-top: 125px;
+}
+.item_ICO {
+  display: inline-block;
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 80px;
+  position:relative;
+}
+.ICO_container--L {
+  width: 50%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.ICO_container--R {
+  width: 50%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.shop {
+  padding-left: 5%;
+  padding-right: 2.5%;
+}
+.shop2 {
+  padding-right: 5%;
+  padding-left: 2.5%;
+}
+
+.ICO_container--img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  margin-top: 5px;
 }
 /******************************************
 /* MOI
@@ -413,6 +619,132 @@ footer {
   margin-top: 150px;
   padding-left: 1%;
 }
+/******************************************
+/* BS
+/*******************************************/
+.BS_container--L {
+  width: 50%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.BS_container--R {
+  width: 50%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.BS_container--F {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.BS_container--img {
+  width: 100%;
+  height: auto;
+}
+.octopus {
+  padding-left: 20%;
+  padding-right: 6%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.meat {
+  padding-left: 20%;
+  padding-right: 6%;
+  margin-top: 50px;
+}
+.hhour {
+  padding-left: 30%;
+  padding-right: 0%;
+  margin-top: 50px;
+}
+.white {
+  padding-left: 5%;
+  padding-right: 2.5%;
+  margin-top: 50px;
+}
+.white_R {
+  padding-right: 5%;
+  padding-left: 2.5%;
+  margin-top: 50px;
+}
+.gallery_text--BS {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+/******************************************
+/* MIT
+/*******************************************/
+.cow_container {
+  width: 50%;
+  float: right;
+  height: auto;
+  margin-top: 50px;
+}
+.cow_container--cow {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: auto;
+  margin-bottom: -100px;
+}
+.poster_container--L {
+  width: 50%;
+  padding-left: 15%;
+  padding-right: 5%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.poster_container--LSecond {
+  width: 50%;
+  padding-left: 8%;
+  padding-right: 12%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.poster_container--R {
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+  float: left;
+  height: auto;
+  margin-top: 150px;
+}
+.poster_container--RSecond {
+  width: 50%;
+  padding-left: 2%;
+  padding-right: 18%;
+  float: left;
+  height: auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.poster_container--poster {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+.apparel {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: auto;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+/******************************************
+/* DIESEL
+/*******************************************/
 
 @media (min-width: 500px) and (max-width: 900px) {
   /******************************************
