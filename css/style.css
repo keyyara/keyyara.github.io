@@ -63,6 +63,7 @@ h1 {
   font-family: "America_R";
   font-weight: 300;
   font-size: 120px;
+  line-height: 122px;
   margin: 0px;
 }
 h2 {
@@ -70,7 +71,7 @@ h2 {
   font-weight: 100;
   font-size: 90px;
   margin: 0px;
-  letter-spacing: 5px;
+  letter-spacing: 0px;
   text-transform: uppercase;
 }
 h3{
@@ -110,9 +111,9 @@ h6 {
 p {
   font-family: "America_R";
   font-weight: 400;
-  font-size: 12.5px;
+  font-size: 14px;
   line-height: 19px;
-  letter-spacing: -.25px;
+  letter-spacing: 0px;
   margin: 0px;
 }
 /******************************************
@@ -320,11 +321,22 @@ video:-webkit-full-page-media {
 }
 .project-text {
   position: fixed;
-  float: left;
   width:100%;
+  z-index: 1;
   padding-right: 5%;
   padding-left: 25px;
+  padding-bottom: 17px;
+  background-color: white;
+  /*opacity: .5;*/
+  border-bottom: 2.5px solid black;
+}
+.project-text-gradient {
+  position: fixed;
+  width:100%;
+  height: 100px;
   padding-bottom: 25px;
+  background: linear-gradient(white-, transparent);
+  opacity: 1;
 }
 .client {
   float: left;
@@ -335,6 +347,8 @@ video:-webkit-full-page-media {
 }
 .client_name {
   float: left;
+  position: relative;
+  transition: top ease 0.5s;
   width: 35%;
   padding-left: 25px;
   padding-top: 25px;
@@ -345,11 +359,55 @@ video:-webkit-full-page-media {
   padding-left: 25px;
   padding-top: 25px;
 }
-.info_project {
+.line {
+  z-index: -50;
+  position: absolute;
+  width: 100%;
+  border: 1.5px solid black;
+  top: 1100px;
+}
+/*.line--2 {
+  z-index: -50;
+  position: absolute;
+  width: 100%;
+  border: 1.5px solid black;
+  /*height: 120px;
+  background: linear-gradient(rgba(255,77,0,.25), rgba(255,255,255,.9) 93%);
+  top: 1486px;
+}*/
+.client_name--ICO {
+  float: left;
+  position: relative;
+  transition: top ease 0.5s;
+  width: 35%;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+.client_name--ICO a {
+  color: black;
+}
+.client_name--ICO a:hover{
+  color: #FF4D00;
+  -webkit-text-stroke-color: #FF4D00;
+  -webkit-text-stroke-width: 1px;
+}
+.info_project--ICO {
   width: 35%;
   float: right;
   padding-left: 25px;
-  padding-top: 25px;
+  padding-top: 15px;
+}
+.info_project--ICO h4 {
+  float: left;
+  margin-left: 8px;
+}
+.info_project--ICO a {
+color: black;
+}
+.info_project--ICO a:hover{
+color: #FF4D00;
+-webkit-text-stroke-color: #FF4D00;
+-webkit-text-stroke-width: 1px;
 }
 .gallery_text {
   float: left;
@@ -384,7 +442,7 @@ video:-webkit-full-page-media {
 .project-gi {
   width: 100%;
   height: auto;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   margin-top: 5px;
 }
 
@@ -507,6 +565,101 @@ footer {
 /******************************************
 /* ICO
 /*******************************************/
+.background_ICO {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -100;
+}
+.background_ICO--container {
+  float: left;
+  width: 100%;
+}
+.hand {
+  float: left;
+  margin-top: 180px;
+  width: 100%;
+  padding-left: 52%;
+  padding-right: 24%;
+  height: auto;
+  transform: rotate(10deg);
+}
+.oyster {
+  float: left;
+  margin-top: 280px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 69%;
+  height: auto;
+  transform: rotate(60deg);
+}
+.opener {
+  width: 100%;
+  float: left;
+  height: 800px;
+  padding-top: 140px;
+  padding-left: 5%;
+}
+.opener h1 {
+  text-transform: uppercase;
+}
+.opener_info--text {
+  position: absolute;
+  top: 325px;
+  right: 5%;
+}
+.opener_info {
+  padding-bottom: 200px;
+  margin-top: 10%;
+  margin-left: 30%;
+  width: 300px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+.opener_info h4 {
+  text-transform: uppercase;
+}
+.text_shuckit--first {
+  float: left;
+  width: 100%;
+  text-align: justify;
+  margin-top: 0px;
+}
+.text_shuckit {
+  float: left;
+  width: 100%;
+  text-align: justify;
+  margin-top: 7px;
+}
+.text_shuckit--L {
+  float: left;
+  width: 50%;
+}
+.text_shuckit--R {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.gallery_small--ICO {
+  float: left;
+  width: 100%;
+  margin-top: 0px;
+}
+.aside {
+  float: left;
+  width: 20%;
+  margin-top: 320px;
+  padding-right: 1.5%;
+}
+.proj_aside {
+  float: left;
+  width: 100%;
+}
+.proj_aside--2 {
+  float: left;
+  width: 100%;
+  margin-top: 400px;
+}
 .carousel_blocks--ICO {
   display: block;
   background: white;
@@ -537,28 +690,36 @@ footer {
   width: 50%;
   float: left;
   height: auto;
-  margin-top: 50px;
 }
 .ICO_container--R {
   width: 50%;
   float: left;
   height: auto;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .shop {
-  padding-left: 5%;
-  padding-right: 2.5%;
+  padding-left: 0%;
+  padding-right: 5px;
 }
 .shop2 {
-  padding-right: 5%;
-  padding-left: 2.5%;
+  padding-right: 0%;
+  padding-left: 5px;
 }
-
+.menuCard {
+  padding-left: .38%;
+  margin-top: -40px;
+}
 .ICO_container--img {
   width: 100%;
   height: auto;
-  margin-bottom: 25px;
-  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.ICO_container--center{
+  width: 100%;
+  height: auto;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 /******************************************
 /* MOI

@@ -112,7 +112,9 @@ $('#one').click(
 //* Fade Out *//
 
 $(window).scroll(function(){
-    $(".project-text").css("opacity", 1 - $(window).scrollTop() / 180);
+    $(".opener").css("opacity", 1 - $(window).scrollTop() / 400);
   });
+
+
 
 });
