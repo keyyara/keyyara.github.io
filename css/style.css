@@ -537,28 +537,59 @@ footer {
   float: left;
   margin-top: 100px;
 }
+.about {
+  float: left;
+  margin-top: 50px;
+}
 .ipad {
   width: 100%;
   padding-left: 20%;
-  padding-right: 7.5%;
+  padding-right: 30%;
 }
 .ipad2 {
   width: 100%;
   padding-left: 7.5%;
   padding-right: 20%;
 }
+.iphone {
+  width: 100%;
+  padding-left: 50%;
+  padding-right: 10%;
+  margin-top: 280px;
+}
+.iphone_menu {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 45%;
+  margin-top: 115px;
+  margin-bottom: -50px;
+}
+.bloc_desktop {
+  width: 105%;
+  margin-left: -2%;
+  padding-right: 0%;
+}
+.Bloc_container--L {
+  width: 75%;
+  float: left;
+}
+.Bloc_container--R {
+  width: 25%;
+  float: left;
+}
 #croissant {
-  width: 32%;
-  padding-left: 20%;
-  margin-top: -100px;
-  margin-bottom: -150px;
+  width: 43%;
+  padding-left: 15%;
+  padding-right: 10%;
+  margin-top: -150px;
+  margin-bottom: -50px;
   transform: rotate(-40deg);
 }
 #tea {
-  width: 26%;
-  margin-left: 60%;
-  margin-top: -20px;
-  margin-bottom: -100px;
+  float: left;
+  width: 30%;
+  padding-left: 10%;
+  margin-top: 20px;
   transform: rotate(20deg);
 }
 #beans {
@@ -570,8 +601,8 @@ footer {
 }
 #soup {
   width: 33%;
-  margin-left: 0%;
-  margin-top: -100px;
+  margin-left: 80%;
+  margin-top: -200px;
 }
 #sandwich {
   width: 40%;
