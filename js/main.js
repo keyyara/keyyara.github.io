@@ -71,12 +71,12 @@ $('#project-numbers').hover(
 
   $('#seven').hover(
     function () {
-    $('#Forge').addClass('show');
-    $('#Forge-pImage').removeClass('hide');
+    $('#ICOP').addClass('show');
+    $('#ICOP-pImage').removeClass('hide');
   },
     function () {
-    $('#Forge').removeClass('show');
-    $('#Forge-pImage').addClass('hide');
+    $('#ICOP').removeClass('show');
+    $('#ICOP-pImage').addClass('hide');
   });
 
   $('#eight').hover(
