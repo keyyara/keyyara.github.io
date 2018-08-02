@@ -111,6 +111,8 @@ $('#one').click(
 });
 //* Fade Out *//
 
+//* Fade Out *//
+
 $(window).scroll(function(){
     $(".opener").css("opacity", 1 - $(window).scrollTop() / 400);
   });

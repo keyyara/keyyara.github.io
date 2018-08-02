@@ -122,7 +122,7 @@ p {
 /*******************************************/
 body {
   margin: 0;
-  cursor: url('https://ibb.co/khkeMy'), default;
+  cursor: url(../images/cursor.svg), auto;
 }
 a {
   color: black;
@@ -158,6 +158,11 @@ dt:hover {
   color: transparent;
   -webkit-text-stroke-color: #000FFF;
   -webkit-text-stroke-width: 1.75px;
+}
+footer {
+  float: left;
+  clear: both;
+  height: 200px;
 }
 /******************************************
 /* HOME PAGE
@@ -428,8 +433,8 @@ color: transparent;
   float: left;
   width:100%;
   height: auto;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   background: transparent;
 }
 .first {
@@ -451,7 +456,38 @@ footer {
   height: 100px;
 }
 /******************************************
-/* BLOC
+/* noated
+/*******************************************/
+.noat {
+  padding-right: 2.5%;
+  padding-left: 5%;
+}
+.noat2 {
+  padding-right: 5%;
+  padding-left: 2.5%;
+}
+.gallery_Noat {
+  float: left;
+  width: 100%;
+  margin-top: 0px;
+}
+.gallery_Noat--first {
+  float: left;
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-top:100px;
+}
+.gallery_Noat--second {
+  float: left;
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+/******************************************
+/* BLOC11
 /*******************************************/
 .green {
   background-color: #8DC6E8;
@@ -537,6 +573,16 @@ footer {
 /******************************************
 /* Atom
 /*******************************************/
+.gallery_Atom {
+  float: left;
+  width: 100%;
+}
+.atom_cross {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 80px;
+}
 .carousel_blocks--atom {
   display: block;
   background: white;
@@ -561,9 +607,63 @@ footer {
   margin-left: 30%;
   margin-top: -240px;
 }
+.racetrack {
+  float: left;
+  width: 130%;
+  margin-top: -137px;
+}
+.smiley {
+  width: 100%;
+  float: left;
+  margin-top: -50px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+.countdown {
+  float: left;
+  width: 100%;
+  padding-left: 20%;
+}
+.iphones {
+  float: left;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: -50px;
+}
+.ipads {
+  float: left;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: -80px;
+}
+.cross {
+  width: 100%;
+  float: left;
+}
+.crosses {
+  width: 100%;
+  float: left;
+  margin-top: -80px;
+}
+.ATOM_container--R {
+  float: right;
+  width: 70%;
+}
+.chess {
+  float: left;
+  width: 110%;
+  margin-top: 60px;
+}
+.ATOM_container--L {
+  float: left;
+  width: 30%;
+}
 /******************************************
 /* ICO
 /*******************************************/
+
 .background_ICO {
   position: absolute;
   width: 100%;
@@ -612,24 +712,60 @@ footer {
 .opener_info h4 {
   text-transform: uppercase;
 }
+.shuckit {
+  margin-top: 100px;
+}
 .text_shuckit {
   float: left;
   clear: both;
   width: 100%;
-  text-align: justify;
-  margin-top: -200px;
+  margin-top: 45px;
+}
+.text_L {
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+}
+.text_R {
+  float: right;
+  width: 50%;
+  margin-top: 45px;
 }
 .text_shuckit--L {
   float: left;
-  width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
-  text-align: center;
+  width: 50%;
 }
 .text_shuckit--R {
   float: right;
-  text-align: right;
+  text-align: left;
   width: 50%;
+}
+.iscroy {
+  padding-left: 0%;
+  padding-right: 14%;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  width: 50%;
+  float: left;
+  width: 50%;
+}
+.iscroy_info {
+  padding-left: 5%;
+  padding-right: 9%;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  width: 50%;
+  float: left;
+}
+.iscroy_info h4 {
+  text-align: center;
+  margin-bottom: 25px;
+  /*transform: rotate(40deg);*/
+}
+.iscroy h4 {
+  text-align: center;
+  margin-bottom: 25px;
+  /*transform: rotate(40deg);*/
 }
 .gallery_small--ICO {
   float: left;
@@ -689,13 +825,28 @@ footer {
   margin-top: 0px;
 }
 .shop {
-  padding-left: 0%;
-  padding-right: 5px;
-  padding-top: 100px;
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 80px;
+}
+.shopkeep {
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 50px;
 }
 .shop2 {
   padding-right: 0%;
   padding-left: 5px;
+}
+.shuckits {
+  padding-left: 15%;
+  padding-right: 5%;
+  margin-top: 0px;
+}
+.shuckits_2 {
+  padding-left: 15%;
+  padding-right: 5%;
+  margin-top: 80px;
 }
 .menuCard {
   padding-left: .38%;
@@ -773,7 +924,7 @@ footer {
   padding-left: 1%;
 }
 /******************************************
-/* BS
+/* BAMBOO
 /*******************************************/
 .BS_container--L {
   width: 50%;
@@ -831,6 +982,33 @@ footer {
   padding-right: 20%;
   margin-top: 100px;
   margin-bottom: 70px;
+}
+.BS_container--LL {
+  width: 70%;
+  float: left;
+  height: auto;
+  margin-top: -100px;
+}
+.BS_image--LL {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+  padding-right: 2%;
+  padding-left: 12%;
+}
+.BS_container--RR {
+  width: 30%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+}
+.BS_image--RR {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+  padding-right: 5%;
 }
 /******************************************
 /* MIT
@@ -959,6 +1137,7 @@ footer {
 /*******************************************/
 body {
   margin: 25px;
+  cursor: url(../images/cursor.svg), auto;
 }
 #project-desktop {
     display: none;
@@ -1049,6 +1228,7 @@ aside {
 /*******************************************/
 body {
   margin: 25px;
+  cursor: url(../images/cursor.svg), auto;
 }
   h1 {
     font-family: "America_R";
