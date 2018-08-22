@@ -706,7 +706,7 @@ footer {
   width: 30%;
 }
 /******************************************
-/* ICO
+/* Island Creek
 /*******************************************/
 
 .background_ICO {
@@ -858,8 +858,20 @@ footer {
   margin-top: 80px;
   position:relative;
 }
+.ICO_container--three {
+  width: 100%;
+  float: left;
+  height: auto;
+  padding-top: 80px;
+}
+.three {
+  width: 33.33%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 .ICO_container--L {
-  width: 50%;
+  width: 100%;
   float: left;
   height: auto;
 }
